@@ -21,9 +21,9 @@ function weeklyGoal(userName,dailyGoal,bonusTasks) {
     let output = ("User: " + userName + "<br>");
     output += ("Total Weekly Goal:  "+ totalGoal);
     document.getElementById("goal-message").innerHTML = output;
-    preventDefault();
+    event.preventDefault();
 
 }
 
 //weeklyGoal(userName,dailyGoal,bonusTasks);
-Element.addEventListener("goal-btn",weeklyGoal(userName,dailyGoal,bonusTasks));
+document.getElementById("goal-btn").addEventListener("goal-btn",weeklyGoal(userName,dailyGoal,bonusTasks));

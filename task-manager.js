@@ -1,9 +1,6 @@
-
-
-
-
-
-
+    userName = document.getElementById("name");
+    dailyGoal = document.getElementById("dailytarget");
+    bonusTasks = document.getElementById("bonus");
 //documnet.getElementById("goal-btn").onclick 
 
 function weeklyGoal(userName,dailyGoal,bonusTasks) {

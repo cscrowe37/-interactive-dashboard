@@ -35,4 +35,7 @@
         document.getElementById("username").value = "Jane Doe";
         document.getElementById("dailyGoal").value = 5;
         document.getElementById("bonusTasks").value = 2;
+        event.preventDefault();
         }
+
+        weeklyGoal("Jane Doe",5,2);

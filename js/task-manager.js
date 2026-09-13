@@ -5,7 +5,7 @@ dailyGoal = document.getElementById("dailytarget");
 bonusTasks = document.getElementById("bonus");
 
 
-documnet.getElementById("goal-btn").onclick 
+//documnet.getElementById("goal-btn").onclick 
 
 function weeklyGoal(userName,dailyGoal,bonusTasks) {
     // Weekly Goal: Calculate the total weekly task goal for a user.
@@ -25,5 +25,5 @@ function weeklyGoal(userName,dailyGoal,bonusTasks) {
 
 }
 
-weeklyGoal(userName,dailyGoal,bonusTasks);
-Element.addEventListener("goal-btn",weeklyGoal);
+//weeklyGoal(userName,dailyGoal,bonusTasks);
+Element.addEventListener("goal-btn",weeklyGoal(userName,dailyGoal,bonusTasks));

@@ -1,6 +1,6 @@
 <html>
     <head> 
-        <script scr = "js/script.js"defer> </script>
+        
 
         <!-- Bootstrap  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -15,6 +15,12 @@
                 <noscript>"Unfortunately, your web browser does not support JavaScript."</noscript>
                 <div class="container">
                     <div class="row">
+                        <div class="col" id="weekly-tasks">
+                            <script defer src="task-manager.js"></script>
+                            <form> Enter name: <input type="text"> <input type="submit"></form>
+                            <form> Enter daily target: <input type="number"> <input type="submit"></form>
+                            <form> Enter weekly bonus tasks: <input type="number"> <input type="submit"> </form>
+                        </div>
                         <!-- Dashboard Content -->
                     </div>
                 </div>

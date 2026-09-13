@@ -11,6 +11,7 @@ function weeklyGoal(userName,dailyGoal,bonusTasks) {
     userName = document.getElementById("name");
     dailyGoal = document.getElementById("dailytarget");
     bonusTasks = document.getElementById("bonus");
+    console.log('hi');
 
     // Calculate weekly goal based on number of workdays (5) per week
     let weeklyGoal = dailyGoal * 5; 

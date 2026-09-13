@@ -1,15 +1,16 @@
 
 
-userName = document.getElementById("name");
-dailyGoal = document.getElementById("dailytarget");
-bonusTasks = document.getElementById("bonus");
+
+
 
 
 //documnet.getElementById("goal-btn").onclick 
 
 function weeklyGoal(userName,dailyGoal,bonusTasks) {
     // Weekly Goal: Calculate the total weekly task goal for a user.
-
+    userName = document.getElementById("name");
+    dailyGoal = document.getElementById("dailytarget");
+    bonusTasks = document.getElementById("bonus");
 
     // Calculate weekly goal based on number of workdays (5) per week
     let weeklyGoal = dailyGoal * 5; 

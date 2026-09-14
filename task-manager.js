@@ -1,14 +1,14 @@
-    userName = document.getElementById("name");
-    dailyGoal = document.getElementById("dailytarget");
-    bonusTasks = document.getElementById("bonus");
+    //userName = document.getElementById("name");
+    //dailyGoal = document.getElementById("dailytarget");
+    //bonusTasks = document.getElementById("bonus");
 //documnet.getElementById("goal-btn").onclick 
 
 function weeklyGoal(userName,dailyGoal,bonusTasks) {
     // Weekly Goal: Calculate the total weekly task goal for a user.
-    userName = document.getElementById("name");
-    dailyGoal = document.getElementById("dailytarget");
-    bonusTasks = document.getElementById("bonus");
-    console.log('debug 15');
+    let userName = document.getElementById("name");
+    let dailyGoal = document.getElementById("dailytarget");
+    let bonusTasks = document.getElementById("bonus");
+    console.log('debug 16 ' + userName + dailyGoal + bonusTasks);
 
     // Calculate weekly goal based on number of workdays (5) per week
     let weeklyGoal = dailyGoal * 5; 

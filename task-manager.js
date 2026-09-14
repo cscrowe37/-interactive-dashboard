@@ -8,7 +8,7 @@ function weeklyGoal(userName,dailyGoal,bonusTasks) {
     userName = document.getElementById("name");
     dailyGoal = document.getElementById("dailytarget");
     bonusTasks = document.getElementById("bonus");
-    console.log('hi');
+    console.log('debug 15');
 
     // Calculate weekly goal based on number of workdays (5) per week
     let weeklyGoal = dailyGoal * 5; 
@@ -24,4 +24,6 @@ function weeklyGoal(userName,dailyGoal,bonusTasks) {
 }
 
 //weeklyGoal(userName,dailyGoal,bonusTasks);
-document.getElementById("goal-btn").addEventListener("goal-btn",weeklyGoal(userName,dailyGoal,bonusTasks));
+const element = document.getElementById("goal-btn");
+element.addEventListener("click",weeklyGoal)
+//document.getElementById("goal-btn").addEventListener("goal-btn",weeklyGoal(userName,dailyGoal,bonusTasks));

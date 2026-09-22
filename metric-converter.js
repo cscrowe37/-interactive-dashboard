@@ -32,6 +32,7 @@ function convertfunction(){
         let start_type = "miles"
         let end_type = "kilometers"
     } 
+        ///metric start 
     else if (direction === "cm>in") {
         input_value = input_value * 0.39;        
         let start_type = "centimeters"

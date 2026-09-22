@@ -22,13 +22,13 @@ function convertfunction(){
     } else if (direction === "mi>km") {
         input_value = input_value * 1.61;
     } 
-    else if (currentType === "cm>in") {
+    else if (direction === "cm>in") {
         input_value = input_value * 0.39;
-    } else if (currentType === "cm>ft") {
+    } else if (direction === "cm>ft") {
         input_value = input_value * 0.0328;
-    } else if (currentType === "m>yd") {
+    } else if (direction === "m>yd") {
         input_value = input_value * 1.09;
-    } else if (currentType === "km>mir") {
+    } else if (direction === "km>mir") {
         input_value = input_value * 0.62;
     }
     

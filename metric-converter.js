@@ -5,14 +5,14 @@ console.log("Metric measurements: centimeter, meter, kilometer");
 
 
 function convertfunction(){
-// Input
-var number = document.getElementById("numbervalue");
-var direction = document.getElementsByTagName("Measurments");
-let input_value = parseFloat(number)
-
-
-// Convert
-
+    // Input
+    var number = document.getElementById("numbervalue");
+    var direction = document.getElementsByTagName("Measurments");
+    let input_value = parseFloat(number)
+    
+    
+    // Convert
+    
     if (direction === "in>cm") {
         input_value = input_value * 2.54;
     } else if (direction === "ft>cm") {
@@ -30,11 +30,13 @@ let input_value = parseFloat(number)
         input_value = input_value * 1.09;
     } else if (currentType === "km>mir") {
         input_value = input_value * 0.62;
+    }
     
-}
-
-// Output
-console.log(input_value);
+    
+    
+    // Output
+    console.log(input_value);
+    document.getElementById("conversion-message").innHTML = input_value;
 
 }
 const buttonForConverter = document.getElementById("startconversion")

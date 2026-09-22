@@ -1,17 +1,17 @@
-// Display info
+// Display info to console reader
 console.log("Code converts Imperial to Metric and vice versa");
 console.log("Imperial measurements: inch, foot, yard, mile");
 console.log("Metric measurements: centimeter, meter, kilometer");
 
 
 function convertfunction(){
-    // Input
+    // document input
     var number = document.getElementById("numbervalue");
     var direction = document.getElementsByTagName("Measurments");
     let input_value = parseFloat(number)
     
     
-    // Convert
+    // Convert math
     
     if (direction === "in>cm") {
         input_value = input_value * 2.54;

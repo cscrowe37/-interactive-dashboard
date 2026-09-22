@@ -8,6 +8,7 @@ function convertfunction(){
     // document input
     var number = document.getElementById("numbervalue");
     var direction = document.getElementsByTagName("Measurments");
+    //converts number input to float
     let input_value = parseFloat(number)
     
     

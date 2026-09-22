@@ -36,7 +36,7 @@ function convertfunction(){
     
     // Output
     console.log(input_value);
-    document.getElementById("conversion-message").innHTML = input_value;
+    document.getElementById("conversion-message").innerHTML = input_value;
 
 }
 const buttonForConverter = document.getElementById("startconversion")

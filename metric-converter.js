@@ -59,5 +59,6 @@ function convertfunction(){
     document.getElementById("conversion-message").innerHTML = input_value;
 
 }
+//starts the function on button
 const buttonForConverter = document.getElementById("startconversion")
 buttonForConverter.addEventListener("click",convertfunction)

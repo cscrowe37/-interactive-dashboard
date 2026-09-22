@@ -10,7 +10,7 @@ function convertfunction(){
     let start_number = input_value;
     var direction = document.getElementsByTagName("Measurments");
     //converts number input to float
-    let input_value = parseFloat(input_value);
+    input_value = parseFloat(input_value);
     
     
     // Convert math

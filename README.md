@@ -46,3 +46,10 @@ IF first string = “Metric to Imperial”
 		
 OUTPUT number
 
+
+
+
+## Magic Eight Ball 
+added a magic eight ball code and put it to the webpage
+it gives a responce to a question in the box
+

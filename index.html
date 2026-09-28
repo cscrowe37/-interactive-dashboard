@@ -21,7 +21,7 @@
                     <div class="row">
 
                         <div class="col" id="magic-eight-ball">
-                            <script src="magic--eightball.js" defer></script>﻿
+                            <script src="magic--eightball.js" defer></script>
                             <link rel="stylesheet" href="css/magic-eight-ball.css">
                             <h2 class="heading">Magic Eight Ball</h2>
                             <form>
@@ -36,6 +36,33 @@
                             <br>
                         </div>
                         
+                        <div class="col" id="metric-converter">
+                            <form>
+                                Enter numeric value:<input type="number" id ="numbervalue">
+                                Select Option:<select id="Measurments" name="Measurments">
+                                    <option value="in>cm">inches to centimeters</option>
+                                    <option value="ft>cm">feet to centimeters</option>
+                                    <option value="yd>m">yards to meters</option>
+                                    <option value="mi>km">miles to kilometers</option>
+
+                                    <option value="cm>in">centimeters to inches</option>
+                                    <option value="cm>ft">centimeters to feet</option>
+                                    <option value="m>yd">meters to yards</option>
+                                    <option value="km>mi">kilometers to miles</option>
+                                </select>
+                                <button id="startconversion">start conversion</button>
+                                        
+                                
+                            </form>
+                            <script>
+                                document.getElementById("startconversion").addEventListener("click", function(event){
+                                event.preventDefault();
+                                });
+                            </script>
+                            <p id="conversion-message">
+                                
+                            </p>
+                            <script src="metric-converter.js"></script>
                         <div class="col" id="weekly-tasks">
                             
                             <form> 

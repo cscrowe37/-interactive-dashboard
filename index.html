@@ -9,6 +9,7 @@
         <meta>
         </meta>
     </head> 
+    <title> interactive dashboard app holder</title>
 
             <body>
                 <h1> "My Interactive Dashboard"</h1>
@@ -20,13 +21,16 @@
                 <div class="container">
                     <div class="row">
 
+
+
+                        <title>Magic Eight Ball</title>
                         <div class="col" id="magic-eight-ball">
                             <script src="magic-eightball.js" defer></script>﻿
                             <link rel="stylesheet" href="css/magic-eight-ball.css">
                             <h2 class="heading">Magic Eight Ball</h2>
                             <form>
                             <p>Type a yes/no question below, then click on the Eight Ball below to get your answer!</p>
-                            <input id="question" name="question" size="80">
+                            <input id="question" name="question" size="30">
                             <div id="magicEightBall">
                                 <div id="circle"></div>
                                 <img id="ball" src="img/magic-eight-ball.png"/>
@@ -36,6 +40,9 @@
                             <br>
                         </div>
                         
+
+
+                        <title>Metric Converter</title>
                         <div class="col" id="metric-converter">
                             <form>
                                 Enter numeric value:<input type="number" id ="numbervalue">
@@ -63,8 +70,25 @@
                                 
                             </p>
                             <script src="metric-converter.js"></script>
+                        </div>
+
+
+                        
+                        <title>Weekly Tasks</title>
                         <div class="col" id="weekly-tasks">
-                            
+                            <div id="task-list"> 
+                                <h3>Weekly Task List</h3>
+                                <p>Enter a task below to manage your goals</p>
+                                <form>
+                                    Enter task: <input id="task-name"><br>
+                                    <button id="add-task">Add Task</button>
+                                </form>
+                                <script>
+                                document.getElementById("add-task").addEventListener("click", function(event){
+                                event.preventDefault();
+                                });
+                                </script>
+                            </div>
                             <form> 
                             Enter name: <input type="text"id="name"> <br>
                             Enter daily target: <input type="number" id="dailytarget"> <br>
@@ -79,8 +103,6 @@
                             <p id="goal-message"> 
                                 
                             </p>
-
-                            
                             <script  src="task-manager.js" defer></script>
                         </div>
                         <!-- Dashboard Content -->

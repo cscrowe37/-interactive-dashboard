@@ -1,4 +1,36 @@
 
+const myTasks = [];
+
+//make list element 
+const listElement = document.createElement("ul");
+
+//assign id and append
+const taskList = document.getElementById("task-list");
+listElement.id="user-tasks";
+taskList.appendChild(listElement);
+
+//add task logic to button
+const clickbutdoc = document.getElementById("add-task");
+clickbutdoc.addEventListener("click",addToListUL);
+
+function addToListUL(){
+    //get and store string from input field  id="task-name"
+    const inputString = document.getElementById("task-name").value;
+    //.push() string to myTask
+    myTasks.push(inputString);
+    //create list item with document.createElement("li")
+    const outputstring = document.createElement("li");
+    //append list item to <li> 
+    outputstring.innerText = myTasks;
+    //append <li> to <ul>
+    listElement.appendChild(outputstring);
+}   
+
+
+
+
+
+
 function weeklyGoal(userName,dailyGoal,bonusTasks) {
     // Weekly Goal: Calculate the total weekly task goal for a user.
     userName = document.getElementById("name").value;
@@ -16,7 +48,6 @@ function weeklyGoal(userName,dailyGoal,bonusTasks) {
     let output = ("User: " + userName + "<br>");
     output += ("Total Weekly Goal:  "+ totalGoal);
     document.getElementById("goal-message").innerHTML = output;
-
 }
 
 const element = document.getElementById("goal-btn");

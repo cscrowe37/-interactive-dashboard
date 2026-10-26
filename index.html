@@ -89,6 +89,27 @@
                                 });
                                 </script>
                             </div>
+                            <div id="big-task-list">
+                                <form>
+                                    Enter task name: <input id="task-name2"><br>
+                                    Priority: <select id="prior">
+                                        <option value="Hig">High</option>
+                                        <option value="Med">Medium</option>
+                                        <option value="Low">Low</option>
+                                    </select><br>
+                                    Important?<input type="checkbox" id="checkimport"><br>
+                                    <button id="add-big-task">Add Task</button><br>
+                                    <button id="delete-button">Remove the entire list</button><br>
+                                </form>
+                                <script>
+                                document.getElementById("add-big-task").addEventListener("click", function(event){
+                                event.preventDefault();
+                                });
+                                document.getElementById("delete-button").addEventListener("click", function(event){
+                                event.preventDefault();
+                                });
+                                </script>
+                            </div>
                             <form> 
                             Enter name: <input type="text"id="name"> <br>
                             Enter daily target: <input type="number" id="dailytarget"> <br>
@@ -106,6 +127,7 @@
                             <script  src="task-manager.js" defer></script>
                         </div>
                         <!-- Dashboard Content -->
+                        
                     </div>
                 </div>
                 

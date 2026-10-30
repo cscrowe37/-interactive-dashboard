@@ -25,7 +25,7 @@
 
                         <title>Magic Eight Ball</title>
                         <div class="col" id="magic-eight-ball">
-                            <script src="magic-eightball.js" defer></script>﻿
+                            <script src="js/magic-eightball.js" defer></script>﻿
                             <link rel="stylesheet" href="css/magic-eight-ball.css">
                             <h2 class="heading">Magic Eight Ball</h2>
                             <form>
@@ -69,7 +69,7 @@
                             <p id="conversion-message">
                                 
                             </p>
-                            <script src="metric-converter.js"></script>
+                            <script src="js/metric-converter.js"></script>
                         </div>
 
 
@@ -110,25 +110,40 @@
                                 });
                                 </script>
                             </div>
-                            <form> 
-                            Enter name: <input type="text"id="name"> <br>
-                            Enter daily target: <input type="number" id="dailytarget"> <br>
-                            Enter weekly bonus tasks: <input type="number" id="bonus"> <br>
-                            <button id="goal-btn">submit</button>
-                            </form>
-                            <script>
-                                document.getElementById("goal-btn").addEventListener("click", function(event){
-                                event.preventDefault();
-                                });
-                            </script>
-                            <p id="goal-message"> 
-                                
-                            </p>
-                            <script  src="task-manager.js" defer></script>
+                            <div>
+                                <form> 
+                                Enter name: <input type="text"id="name"> <br>
+                                Enter daily target: <input type="number" id="dailytarget"> <br>
+                                Enter weekly bonus tasks: <input type="number" id="bonus"> <br>
+                                <button id="goal-btn">submit</button>
+                                </form>
+                                <script>
+                                    document.getElementById("goal-btn").addEventListener("click", function(event){
+                                    event.preventDefault();
+                                    });
+                                </script>
+                                <p id="goal-message"> 
+                                    
+                                </p>
+                                <script  src="js/task-manager.js" defer></script>
+                            </div>
+                            <div id="digital-clock" class="col">
+                                <h3>Current Time & Date</h3>
+                                <p id="clock-face"></p>
+                                <p id="calender-date"></p>
+
+                                <script src="js/digital-clock.js"></script>
+                                <link rel="stylesheet"  href="css/digital-clock.css">
+
+
+
+
+                            </div>
                         </div>
                         <!-- Dashboard Content -->
                         
                     </div>
+
                 </div>
                 
             </body>
